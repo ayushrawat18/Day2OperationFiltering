@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sn_cpg_filter_operations</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sn_cpg_filter_operations">filter_scriptCHANGESTO^EQ<item endquery="false" field="filter_script" goto="false" newquery="false" operator="CHANGESTO" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Filter Script if blank</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var script = '// Update the following script with a custom script to determine if a specified operation should be displayed for a given CI\n'
++ '// The following variables are available:\n'
++ '//    ciId - sys_id of the CI to be tested\n'
++ '//    ciTable  - CMDB table the CI resides on\n'
++ '//   ldcId - the sys_id of the Logical Datacenter the CI is deployed on\n'
++ '//   rbOperationName - name of the operation being validated\n'
++ '//   rbOperationId - the sys_id of the operation being validated\n'
++ '//\n'
++ '//   Return true if the operation should be displayed based on the results of the script\n'
++ '//   Return false if the operation should not be displayed based on the results of the script\n'
++ '\n'
++ 'filterScript(ciId,ciTable,ldcId,rbOperationName,rbOperationId);\n'
++ '\n'
++ 'function filterScript(ciId,ciTable,ldcId,rbOperationName,rbOperationId) {\n'
++ '	// Add custom script filter here\n'
++ '\n'
++ '\n'
++ '	// Return true if the CI passes the fitler or false if it does not\n'
++ '	return true;\n'
++ '}';
+	
+	current.filter_script = script;
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 09:16:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>31a5bb2e5b730010720b1ec76981c71e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Filter Script if blank</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sys_script_31a5bb2e5b730010720b1ec76981c71e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 09:16:37</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=31a5bb2e5b730010720b1ec76981c71e"/>
+</record_update>

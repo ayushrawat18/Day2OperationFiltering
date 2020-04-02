@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_resourceinterface">
+    <sn_cmp_rb_resourceinterface action="INSERT_OR_UPDATE">
+        <extends_from display_value="Virtual Server Interface">ee4a735e0be622009e620bcb15673a02</extends_from>
+        <is_system_defined>false</is_system_defined>
+        <name>CloneExtension Interface</name>
+        <sys_class_name>sn_cmp_rb_resourceinterface</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 09:20:22</sys_created_on>
+        <sys_id>73ba829b5b7b0010720b1ec76981c7fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CloneExtension Interface</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_rb_resourceinterface_73ba829b5b7b0010720b1ec76981c7fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 09:20:22</sys_updated_on>
+        <type>Extension</type>
+    </sn_cmp_rb_resourceinterface>
+</record_update>

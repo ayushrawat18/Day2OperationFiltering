@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>0</order>
+        <sc_cat_item display_value="ModifySchedule">62508a535b7b0010720b1ec76981c75d</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:57</sys_created_on>
+        <sys_id>aa508a535b7b0010720b1ec76981c78a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>General Info.ModifySchedule</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>io_set_item_aa508a535b7b0010720b1ec76981c78a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:57</sys_updated_on>
+        <variable_set display_value="General Info">62508a535b7b0010720b1ec76981c78a</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>io_set_item_aa508a535b7b0010720b1ec76981c78a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>0</order><sc_cat_item display_value="ModifySchedule">62508a535b7b0010720b1ec76981c75d</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:57</sys_created_on><sys_id>aa508a535b7b0010720b1ec76981c78a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>General Info.ModifySchedule</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>io_set_item_aa508a535b7b0010720b1ec76981c78a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:57</sys_updated_on><variable_set display_value="General Info">62508a535b7b0010720b1ec76981c78a</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>285222865</payload_hash>
+        <record_name>General Info.ModifySchedule</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:57</sys_created_on>
+        <sys_id>2e508a535b7b0010720b1ec76981c78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e112e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:57</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>66508a53237b00103834cc378e058d8d</update_guid>
+        <update_guid_history>66508a53237b00103834cc378e058d8d:285222865</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="General Info.ModifySchedule">c071e6ab5bfb0010720b1ec76981c789</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:37:59</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>37be5258a0fb497c95eb5f93f7245ea1</sys_id>
+        <sys_metadata>aa508a535b7b0010720b1ec76981c78a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>General Info.ModifySchedule</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>io_set_item_aa508a535b7b0010720b1ec76981c78a</sys_update_name>
+        <sys_update_version display_value="io_set_item_aa508a535b7b0010720b1ec76981c78a">2e508a535b7b0010720b1ec76981c78d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:37:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_resource_op">
+    <sn_cmp_bp_stage_resource_op action="DELETE">
+        <alias_name>Blueprint Container Resource.ModifySchedule</alias_name>
+        <bp_stage_operation display_value="ModifySchedule">985086535b7b0010720b1ec76981c76a</bp_stage_operation>
+        <bp_stage_resource display_value="Blueprint Container Resource">185086535b7b0010720b1ec76981c779</bp_stage_resource>
+        <condition_text/>
+        <operation_order>100</operation_order>
+        <parent_id/>
+        <rb_operation_impl display_value="ModifySchedule">c85046535b7b0010720b1ec76981c7c4</rb_operation_impl>
+        <resource_block display_value="ARMTemplate Blueprint Resource">274006535b7b0010720b1ec76981c7e9</resource_block>
+        <sys_class_name>sn_cmp_bp_stage_resource_op</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:50</sys_created_on>
+        <sys_id>3850c6535b7b0010720b1ec76981c75b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Blueprint Container Resource.ModifySchedule</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_resource_op_3850c6535b7b0010720b1ec76981c75b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:50</sys_updated_on>
+        <type/>
+        <unique_id>5451</unique_id>
+    </sn_cmp_bp_stage_resource_op>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_bp_stage_resource_op_3850c6535b7b0010720b1ec76981c75b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_resource_op"><sn_cmp_bp_stage_resource_op action="INSERT_OR_UPDATE"><alias_name>Blueprint Container Resource.ModifySchedule</alias_name><bp_stage_operation display_value="ModifySchedule">985086535b7b0010720b1ec76981c76a</bp_stage_operation><bp_stage_resource display_value="Blueprint Container Resource">185086535b7b0010720b1ec76981c779</bp_stage_resource><condition_text/><operation_order>100</operation_order><parent_id/><rb_operation_impl display_value="ModifySchedule">c85046535b7b0010720b1ec76981c7c4</rb_operation_impl><resource_block display_value="ARMTemplate Blueprint Resource">274006535b7b0010720b1ec76981c7e9</resource_block><sys_class_name>sn_cmp_bp_stage_resource_op</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:50</sys_created_on><sys_id>3850c6535b7b0010720b1ec76981c75b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Blueprint Container Resource.ModifySchedule</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_bp_stage_resource_op_3850c6535b7b0010720b1ec76981c75b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:50</sys_updated_on><type/><unique_id>5451</unique_id></sn_cmp_bp_stage_resource_op></record_update>]]></payload>
+        <payload_hash>842882653</payload_hash>
+        <record_name>Blueprint Container Resource.ModifySchedule</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:50</sys_created_on>
+        <sys_id>bc50c6535b7b0010720b1ec76981c75c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e0f6c10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:50</sys_updated_on>
+        <type>Operation</type>
+        <update_guid>f450c653487b001027b73522c18f8e5c</update_guid>
+        <update_guid_history>f450c653487b001027b73522c18f8e5c:842882653</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Blueprint Container Resource.ModifySchedule">2671aeab5bfb0010720b1ec76981c70f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:09</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_bp_stage_resource_op">sn_cmp_bp_stage_resource_op</sys_db_object>
+        <sys_id>0c9dd6dcd09d435399ce11e5229126e9</sys_id>
+        <sys_metadata>3850c6535b7b0010720b1ec76981c75b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Blueprint Container Resource.ModifySchedule</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_bp_stage_resource_op_3850c6535b7b0010720b1ec76981c75b</sys_update_name>
+        <sys_update_version display_value="sn_cmp_bp_stage_resource_op_3850c6535b7b0010720b1ec76981c75b">bc50c6535b7b0010720b1ec76981c75c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

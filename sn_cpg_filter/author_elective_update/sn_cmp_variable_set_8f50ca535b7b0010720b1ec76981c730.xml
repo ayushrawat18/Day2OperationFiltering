@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_variable_set">
+    <sn_cmp_variable_set action="DELETE">
+        <bp_cat_item display_value="Stop">4f50ca535b7b0010720b1ec76981c707</bp_cat_item>
+        <create_roles/>
+        <description/>
+        <display_title>true</display_title>
+        <internal_name>lifecycle_operation_parameters</internal_name>
+        <layout>2down</layout>
+        <name>Lifecycle Operation Parameters</name>
+        <order>2000</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>sn_cmp_variable_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:59</sys_created_on>
+        <sys_id>8f50ca535b7b0010720b1ec76981c730</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lifecycle Operation Parameters</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_variable_set_8f50ca535b7b0010720b1ec76981c730</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:59</sys_updated_on>
+        <title>Lifecycle Operation Parameters</title>
+        <type>one_to_one</type>
+        <write_roles/>
+    </sn_cmp_variable_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_variable_set_8f50ca535b7b0010720b1ec76981c730</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_variable_set"><sn_cmp_variable_set action="INSERT_OR_UPDATE"><bp_cat_item display_value="Stop">4f50ca535b7b0010720b1ec76981c707</bp_cat_item><create_roles/><description/><display_title>true</display_title><internal_name>lifecycle_operation_parameters</internal_name><layout>2down</layout><name>Lifecycle Operation Parameters</name><order>2000</order><read_roles/><set_attributes/><sys_class_name>sn_cmp_variable_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:59</sys_created_on><sys_id>8f50ca535b7b0010720b1ec76981c730</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Lifecycle Operation Parameters</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_variable_set_8f50ca535b7b0010720b1ec76981c730</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:59</sys_updated_on><title>Lifecycle Operation Parameters</title><type>one_to_one</type><write_roles/></sn_cmp_variable_set></record_update>]]></payload>
+        <payload_hash>1152816888</payload_hash>
+        <record_name>Lifecycle Operation Parameters</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:59</sys_created_on>
+        <sys_id>cb50ca535b7b0010720b1ec76981c735</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e118ba0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:59</sys_updated_on>
+        <type>Variable Set</type>
+        <update_guid>0750ca53157b00101ec7a74e90599435</update_guid>
+        <update_guid_history>0750ca53157b00101ec7a74e90599435:1152816888</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Lifecycle Operation Parameters">f361a6ab5bfb0010720b1ec76981c7b5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:37:58</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_variable_set">sn_cmp_variable_set</sys_db_object>
+        <sys_id>1867f687904343128d8f033315167ee1</sys_id>
+        <sys_metadata>8f50ca535b7b0010720b1ec76981c730</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lifecycle Operation Parameters</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_variable_set_8f50ca535b7b0010720b1ec76981c730</sys_update_name>
+        <sys_update_version display_value="sn_cmp_variable_set_8f50ca535b7b0010720b1ec76981c730">cb50ca535b7b0010720b1ec76981c735</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:37:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

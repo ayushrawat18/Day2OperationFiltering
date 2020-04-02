@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_res_op_attr">
+    <sn_cmp_bp_stage_res_op_attr action="DELETE">
+        <default_value>${parameter.StackID}</default_value>
+        <name>StackID</name>
+        <rb_operation_attribute display_value="StackID">885046535b7b0010720b1ec76981c7f3</rb_operation_attribute>
+        <stage_resource_operation display_value="Blueprint Container Resource.Stop">c950c6535b7b0010720b1ec76981c787</stage_resource_operation>
+        <sys_class_name>sn_cmp_bp_stage_res_op_attr</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:51</sys_created_on>
+        <sys_id>4550c6535b7b0010720b1ec76981c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>StackID</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_res_op_attr_4550c6535b7b0010720b1ec76981c78e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:51</sys_updated_on>
+        <type_of_map>1</type_of_map>
+        <use_in_operation>true</use_in_operation>
+    </sn_cmp_bp_stage_res_op_attr>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_bp_stage_res_op_attr_4550c6535b7b0010720b1ec76981c78e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_res_op_attr"><sn_cmp_bp_stage_res_op_attr action="INSERT_OR_UPDATE"><default_value>${parameter.StackID}</default_value><name>StackID</name><rb_operation_attribute display_value="StackID">885046535b7b0010720b1ec76981c7f3</rb_operation_attribute><stage_resource_operation display_value="Blueprint Container Resource.Stop">c950c6535b7b0010720b1ec76981c787</stage_resource_operation><sys_class_name>sn_cmp_bp_stage_res_op_attr</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:51</sys_created_on><sys_id>4550c6535b7b0010720b1ec76981c78e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>StackID</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_bp_stage_res_op_attr_4550c6535b7b0010720b1ec76981c78e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:51</sys_updated_on><type_of_map>1</type_of_map><use_in_operation>true</use_in_operation></sn_cmp_bp_stage_res_op_attr></record_update>]]></payload>
+        <payload_hash>1781926773</payload_hash>
+        <record_name>StackID</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:51</sys_created_on>
+        <sys_id>4d50c6535b7b0010720b1ec76981c79d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e0f8730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:51</sys_updated_on>
+        <type>Operation Attribute</type>
+        <update_guid>8550c653ed7b00103ec8cedfd8c1699d</update_guid>
+        <update_guid_history>8550c653ed7b00103ec8cedfd8c1699d:1781926773</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="StackID">ea71aeab5bfb0010720b1ec76981c740</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:10</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_bp_stage_res_op_attr">sn_cmp_bp_stage_res_op_attr</sys_db_object>
+        <sys_id>06df4daab3c54d1e803fd9d8d15a5dc4</sys_id>
+        <sys_metadata>4550c6535b7b0010720b1ec76981c78e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>StackID</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_bp_stage_res_op_attr_4550c6535b7b0010720b1ec76981c78e</sys_update_name>
+        <sys_update_version display_value="sn_cmp_bp_stage_res_op_attr_4550c6535b7b0010720b1ec76981c78e">4d50c6535b7b0010720b1ec76981c79d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

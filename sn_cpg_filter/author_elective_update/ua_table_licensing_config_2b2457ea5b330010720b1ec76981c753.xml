@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>sn_cpg_filter_sn_cmp_rb_op_impl</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 06:45:45</sys_created_on>
+        <sys_id>2b2457ea5b330010720b1ec76981c753</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_cpg_filter_sn_cmp_rb_op_impl</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>ua_table_licensing_config_2b2457ea5b330010720b1ec76981c753</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 06:45:45</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>ua_table_licensing_config_2b2457ea5b330010720b1ec76981c753</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>sn_cpg_filter_sn_cmp_rb_op_impl</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-30 06:45:45</sys_created_on><sys_id>2b2457ea5b330010720b1ec76981c753</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_cpg_filter_sn_cmp_rb_op_impl</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>ua_table_licensing_config_2b2457ea5b330010720b1ec76981c753</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-30 06:45:45</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>-1738730543</payload_hash>
+        <record_name>sn_cpg_filter_sn_cmp_rb_op_impl</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 06:45:45</sys_created_on>
+        <sys_id>2b2457ea5b330010720b1ec76981c755</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1712a30600e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 06:45:45</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>632457ea3c3300105319c9d75fd4c855</update_guid>
+        <update_guid_history>632457ea3c3300105319c9d75fd4c855:-1738730543</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 06:48:05</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>62ba485164ee4a38a944aac672064e40</sys_id>
+        <sys_metadata>2b2457ea5b330010720b1ec76981c753</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_cpg_filter_sn_cmp_rb_op_impl</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_2b2457ea5b330010720b1ec76981c753</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_2b2457ea5b330010720b1ec76981c753">2b2457ea5b330010720b1ec76981c755</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 06:48:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

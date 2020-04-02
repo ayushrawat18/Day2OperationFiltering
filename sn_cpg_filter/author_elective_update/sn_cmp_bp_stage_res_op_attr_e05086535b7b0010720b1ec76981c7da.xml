@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_res_op_attr">
+    <sn_cmp_bp_stage_res_op_attr action="DELETE">
+        <default_value>${parameter.ScheduleProfile}</default_value>
+        <name>ScheduleProfile</name>
+        <rb_operation_attribute display_value="ScheduleProfile">334046535b7b0010720b1ec76981c72b</rb_operation_attribute>
+        <stage_resource_operation display_value="Blueprint Container Resource.Provision">ec5086535b7b0010720b1ec76981c7bd</stage_resource_operation>
+        <sys_class_name>sn_cmp_bp_stage_res_op_attr</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:49</sys_created_on>
+        <sys_id>e05086535b7b0010720b1ec76981c7da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScheduleProfile</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_res_op_attr_e05086535b7b0010720b1ec76981c7da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:49</sys_updated_on>
+        <type_of_map>1</type_of_map>
+        <use_in_operation>true</use_in_operation>
+    </sn_cmp_bp_stage_res_op_attr>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_bp_stage_res_op_attr_e05086535b7b0010720b1ec76981c7da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_res_op_attr"><sn_cmp_bp_stage_res_op_attr action="INSERT_OR_UPDATE"><default_value>${parameter.ScheduleProfile}</default_value><name>ScheduleProfile</name><rb_operation_attribute display_value="ScheduleProfile">334046535b7b0010720b1ec76981c72b</rb_operation_attribute><stage_resource_operation display_value="Blueprint Container Resource.Provision">ec5086535b7b0010720b1ec76981c7bd</stage_resource_operation><sys_class_name>sn_cmp_bp_stage_res_op_attr</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:49</sys_created_on><sys_id>e05086535b7b0010720b1ec76981c7da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ScheduleProfile</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_bp_stage_res_op_attr_e05086535b7b0010720b1ec76981c7da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:49</sys_updated_on><type_of_map>1</type_of_map><use_in_operation>true</use_in_operation></sn_cmp_bp_stage_res_op_attr></record_update>]]></payload>
+        <payload_hash>-1477063458</payload_hash>
+        <record_name>ScheduleProfile</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:49</sys_created_on>
+        <sys_id>245086535b7b0010720b1ec76981c7dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e0f2630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:49</sys_updated_on>
+        <type>Operation Attribute</type>
+        <update_guid>6c508653f27b0010f446265a5b9133dc</update_guid>
+        <update_guid_history>6c508653f27b0010f446265a5b9133dc:-1477063458</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ScheduleProfile">12716eab5bfb0010720b1ec76981c7aa</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:09</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_bp_stage_res_op_attr">sn_cmp_bp_stage_res_op_attr</sys_db_object>
+        <sys_id>154054aa0e6c40b0b027b02f49580100</sys_id>
+        <sys_metadata>e05086535b7b0010720b1ec76981c7da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScheduleProfile</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_bp_stage_res_op_attr_e05086535b7b0010720b1ec76981c7da</sys_update_name>
+        <sys_update_version display_value="sn_cmp_bp_stage_res_op_attr_e05086535b7b0010720b1ec76981c7da">245086535b7b0010720b1ec76981c7dd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

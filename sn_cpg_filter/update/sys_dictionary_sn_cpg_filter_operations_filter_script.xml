@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="INSERT_OR_UPDATE" element="filter_script" table="sn_cpg_filter_operations">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Filter script</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value>/** Update the following script with a custom script to determine if a specified operation should be displayed for a given CI&#13;
+* The following variables are available:&#13;
+*  ciId - sys_id of the CI to be tested&#13;
+*  ciTable  - CMDB table the CI resides on&#13;
+*   ldcId - the sys_id of the Logical Datacenter the CI is deployed on&#13;
+*   rbOperationName - name of the operation being validated&#13;
+*   rbOperationId - the sys_id of the operation being validated&#13;
+*   Return true if the operation should be displayed based on the results of the script&#13;
+*   Return false if the operation should not be displayed based on the results of the script&#13;
+**/   &#13;
+filterScript(ciId, ciTable, ldcId, rbOperationName, rbOperationId);&#13;
+&#13;
+function filterScript(ciId,ciTable,ldcId,rbOperationName,rbOperationId) {&#13;
+	// Add custom script filter here&#13;
+&#13;
+&#13;
+	// Return true if the CI passes the fitler or false if it does not&#13;
+	return true;&#13;
+}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>filter_script</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Script">script</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <name>sn_cpg_filter_operations</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 06:40:33</sys_created_on>
+        <sys_id>d06253aa5b330010720b1ec76981c730</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Filter script</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sys_dictionary_sn_cpg_filter_operations_filter_script</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:19:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+</record_update>

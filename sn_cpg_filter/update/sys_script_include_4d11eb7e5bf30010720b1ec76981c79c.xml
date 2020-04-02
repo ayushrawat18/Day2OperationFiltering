@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_cpg_filter.CPGOperationFilterCounts</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CPGOperationFilterCounts</name>
+        <script><![CDATA[var CPGOperationFilterCounts = Class.create();
+CPGOperationFilterCounts.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getFilterCounts: function(){
+		var tableName = this.getParameter('tableName');
+		var ciType = this.getParameter('ciType');
+		var resourceOperation = this.getParameter('resourceOperation');
+		var currentId = this.getParameter('currentId');
+		
+		var filterTypeCounts_GA = new GlideAggregate(tableName);
+		filterTypeCounts_GA.addQuery('ci_type',ciType);
+		filterTypeCounts_GA.addQuery('resource_operation',resourceOperation);
+		filterTypeCounts_GA.addQuery('sys_id','!=',currentId);
+		filterTypeCounts_GA.addQuery('active',true);
+		filterTypeCounts_GA.addAggregate('COUNT');
+		filterTypeCounts_GA.groupBy('filter_type');
+		filterTypeCounts_GA.query();
+		
+		while(filterTypeCounts_GA.next()){
+			var filterType = this.newItem('filterType');
+			filterType.setAttribute('name',filterTypeCounts_GA.filter_type);
+			filterType.setAttribute('count',filterTypeCounts_GA.getAggregate('COUNT'));
+		}
+	},
+
+    type: 'CPGOperationFilterCounts'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-31 02:22:06</sys_created_on>
+        <sys_id>4d11eb7e5bf30010720b1ec76981c79c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPGOperationFilterCounts</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sys_script_include_4d11eb7e5bf30010720b1ec76981c79c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-31 02:22:06</sys_updated_on>
+    </sys_script_include>
+</record_update>

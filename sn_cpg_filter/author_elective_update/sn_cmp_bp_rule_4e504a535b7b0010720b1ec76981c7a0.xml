@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_rule">
+    <sn_cmp_bp_rule action="DELETE">
+        <cat_item display_value="ARMTemplate">e43042535b7b0010720b1ec76981c78e</cat_item>
+        <cat_variable display_value="CreateResourceGroup">21500a535b7b0010720b1ec76981c763</cat_variable>
+        <description>MakeNonMandatory ResourceGroupName</description>
+        <name>MakeNonMandatory ResourceGroupName</name>
+        <order>160</order>
+        <status>1</status>
+        <sys_class_name>sn_cmp_bp_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:55</sys_created_on>
+        <sys_id>4e504a535b7b0010720b1ec76981c7a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MakeNonMandatory ResourceGroupName</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_bp_rule_4e504a535b7b0010720b1ec76981c7a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:55</sys_updated_on>
+    </sn_cmp_bp_rule>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_bp_rule_4e504a535b7b0010720b1ec76981c7a0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_rule"><sn_cmp_bp_rule action="INSERT_OR_UPDATE"><cat_item display_value="ARMTemplate">e43042535b7b0010720b1ec76981c78e</cat_item><cat_variable display_value="CreateResourceGroup">21500a535b7b0010720b1ec76981c763</cat_variable><description>MakeNonMandatory ResourceGroupName</description><name>MakeNonMandatory ResourceGroupName</name><order>160</order><status>1</status><sys_class_name>sn_cmp_bp_rule</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:55</sys_created_on><sys_id>4e504a535b7b0010720b1ec76981c7a0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MakeNonMandatory ResourceGroupName</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_bp_rule_4e504a535b7b0010720b1ec76981c7a0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:55</sys_updated_on></sn_cmp_bp_rule></record_update>]]></payload>
+        <payload_hash>1801317624</payload_hash>
+        <record_name>MakeNonMandatory ResourceGroupName</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:55</sys_created_on>
+        <sys_id>42504a535b7b0010720b1ec76981c7a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e10a950000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:55</sys_updated_on>
+        <type>Rule</type>
+        <update_guid>8a504a534b7b00108763da9e77910ea1</update_guid>
+        <update_guid_history>8a504a534b7b00108763da9e77910ea1:1801317624</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="MakeNonMandatory ResourceGroupName">4971aaab5bfb0010720b1ec76981c705</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:03</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_bp_rule">sn_cmp_bp_rule</sys_db_object>
+        <sys_id>0b8abc9964ac4f70b45da41877569640</sys_id>
+        <sys_metadata>4e504a535b7b0010720b1ec76981c7a0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MakeNonMandatory ResourceGroupName</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_bp_rule_4e504a535b7b0010720b1ec76981c7a0</sys_update_name>
+        <sys_update_version display_value="sn_cmp_bp_rule_4e504a535b7b0010720b1ec76981c7a0">42504a535b7b0010720b1ec76981c7a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

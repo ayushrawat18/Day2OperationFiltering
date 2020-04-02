@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_signature">
+    <sn_cmp_rb_op_signature action="DELETE">
+        <access_type>2</access_type>
+        <applicable_to/>
+        <interface display_value="ARMTemplate Interface">ea40c2535b7b0010720b1ec76981c71c</interface>
+        <name>Stop</name>
+        <operation_type/>
+        <sys_class_name>sn_cmp_rb_op_signature</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:41</sys_created_on>
+        <sys_id>7240c2535b7b0010720b1ec76981c784</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Stop</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_signature_7240c2535b7b0010720b1ec76981c784</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:41</sys_updated_on>
+    </sn_cmp_rb_op_signature>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_rb_op_signature_7240c2535b7b0010720b1ec76981c784</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_signature"><sn_cmp_rb_op_signature action="INSERT_OR_UPDATE"><access_type>2</access_type><applicable_to/><interface display_value="ARMTemplate Interface">ea40c2535b7b0010720b1ec76981c71c</interface><name>Stop</name><operation_type/><sys_class_name>sn_cmp_rb_op_signature</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:41</sys_created_on><sys_id>7240c2535b7b0010720b1ec76981c784</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Stop</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_rb_op_signature_7240c2535b7b0010720b1ec76981c784</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:41</sys_updated_on></sn_cmp_rb_op_signature></record_update>]]></payload>
+        <payload_hash>-1922222495</payload_hash>
+        <record_name>Stop</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:42</sys_created_on>
+        <sys_id>7e40c2535b7b0010720b1ec76981c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e0d56e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:42</sys_updated_on>
+        <type>OperationSignature</type>
+        <update_guid>b640c253f97b001028c01e3d5cef1396</update_guid>
+        <update_guid_history>b640c253f97b001028c01e3d5cef1396:-1922222495</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Stop">2f7122eb5bfb0010720b1ec76981c7c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:14</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_rb_op_signature">sn_cmp_rb_op_signature</sys_db_object>
+        <sys_id>66e96c85cd0449409e0ff2f1d1c31b71</sys_id>
+        <sys_metadata>7240c2535b7b0010720b1ec76981c784</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Stop</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_rb_op_signature_7240c2535b7b0010720b1ec76981c784</sys_update_name>
+        <sys_update_version display_value="sn_cmp_rb_op_signature_7240c2535b7b0010720b1ec76981c784">7e40c2535b7b0010720b1ec76981c796</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

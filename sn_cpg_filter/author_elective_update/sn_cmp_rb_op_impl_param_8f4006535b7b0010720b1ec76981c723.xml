@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_param">
+    <sn_cmp_rb_op_impl_param action="DELETE">
+        <applicable_to/>
+        <datasource>5</datasource>
+        <datasourcevalue>12.04.5-LTS,14.04.5-LTS,15.10,16.04.0-LTS</datasourcevalue>
+        <defaultvalue>${parameter.ubuntuOSVersion}</defaultvalue>
+        <error_text/>
+        <help_text/>
+        <host/>
+        <ismandatory>true</ismandatory>
+        <name>ubuntuOSVersion</name>
+        <op_param display_value="ubuntuOSVersion">cb4006535b7b0010720b1ec76981c722</op_param>
+        <operation display_value="Provision">fe40c2535b7b0010720b1ec76981c7be</operation>
+        <order>2</order>
+        <read_only>false</read_only>
+        <regex/>
+        <step/>
+        <sys_class_name>sn_cmp_rb_op_impl_param</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:43</sys_created_on>
+        <sys_id>8f4006535b7b0010720b1ec76981c723</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ubuntuOSVersion</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_impl_param_8f4006535b7b0010720b1ec76981c723</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:43</sys_updated_on>
+        <ui_data_type/>
+        <value>16.04.0-LTS</value>
+        <visibilty>true</visibilty>
+    </sn_cmp_rb_op_impl_param>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_rb_op_impl_param_8f4006535b7b0010720b1ec76981c723</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_param"><sn_cmp_rb_op_impl_param action="INSERT_OR_UPDATE"><applicable_to/><datasource>5</datasource><datasourcevalue>12.04.5-LTS,14.04.5-LTS,15.10,16.04.0-LTS</datasourcevalue><defaultvalue>${parameter.ubuntuOSVersion}</defaultvalue><error_text/><help_text/><host/><ismandatory>true</ismandatory><name>ubuntuOSVersion</name><op_param display_value="ubuntuOSVersion">cb4006535b7b0010720b1ec76981c722</op_param><operation display_value="Provision">fe40c2535b7b0010720b1ec76981c7be</operation><order>2</order><read_only>false</read_only><regex/><step/><sys_class_name>sn_cmp_rb_op_impl_param</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:43</sys_created_on><sys_id>8f4006535b7b0010720b1ec76981c723</sys_id><sys_mod_count>1</sys_mod_count><sys_name>ubuntuOSVersion</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_rb_op_impl_param_8f4006535b7b0010720b1ec76981c723</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:43</sys_updated_on><ui_data_type/><value>16.04.0-LTS</value><visibilty>true</visibilty></sn_cmp_rb_op_impl_param></record_update>]]></payload>
+        <payload_hash>-1691699414</payload_hash>
+        <record_name>ubuntuOSVersion</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:43</sys_created_on>
+        <sys_id>034006535b7b0010720b1ec76981c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e0da990000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:43</sys_updated_on>
+        <type>Operation Parameter</type>
+        <update_guid>8b400653287b001085d5d380c8fbf928</update_guid>
+        <update_guid_history>8b400653287b001085d5d380c8fbf928:-1691699414,0b400653c57b001006969ca2db26b425:897096651</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ubuntuOSVersion">237122eb5bfb0010720b1ec76981c7d3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:14</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_rb_op_impl_param">sn_cmp_rb_op_impl_param</sys_db_object>
+        <sys_id>3ce83fb66b6e4890b01a199c3bb49290</sys_id>
+        <sys_metadata>8f4006535b7b0010720b1ec76981c723</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ubuntuOSVersion</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_rb_op_impl_param_8f4006535b7b0010720b1ec76981c723</sys_update_name>
+        <sys_update_version display_value="sn_cmp_rb_op_impl_param_8f4006535b7b0010720b1ec76981c723">034006535b7b0010720b1ec76981c729</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

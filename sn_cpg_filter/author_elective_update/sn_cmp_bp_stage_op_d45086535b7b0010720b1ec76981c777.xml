@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_op">
+    <sn_cmp_bp_stage_op action="DELETE">
+        <blueprint_stage_model/>
+        <is_plan_customized>true</is_plan_customized>
+        <is_plan_synced>false</is_plan_synced>
+        <name/>
+        <operation_impl/>
+        <parallel_plan_generated>false</parallel_plan_generated>
+        <sys_class_name/>
+        <sys_created_by/>
+        <sys_created_on/>
+        <sys_id>d45086535b7b0010720b1ec76981c777</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope/>
+        <sys_update_name>sn_cmp_bp_stage_op_d45086535b7b0010720b1ec76981c777</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:51</sys_updated_on>
+    </sn_cmp_bp_stage_op>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application/>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_bp_stage_op_d45086535b7b0010720b1ec76981c777</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_op"><sn_cmp_bp_stage_op action="INSERT_OR_UPDATE"><blueprint_stage_model/><is_plan_customized>true</is_plan_customized><is_plan_synced>false</is_plan_synced><name/><operation_impl/><parallel_plan_generated>false</parallel_plan_generated><sys_class_name/><sys_created_by/><sys_created_on/><sys_id>d45086535b7b0010720b1ec76981c777</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_scope/><sys_update_name>sn_cmp_bp_stage_op_d45086535b7b0010720b1ec76981c777</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:51</sys_updated_on></sn_cmp_bp_stage_op></record_update>]]></payload>
+        <payload_hash>-1339172601</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:51</sys_created_on>
+        <sys_id>0d50c6535b7b0010720b1ec76981c7a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e0f8920000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:51</sys_updated_on>
+        <type>Blueprint Stage Operation</type>
+        <update_guid>8550c653b97b001014980ac33de01ca1</update_guid>
+        <update_guid_history>8550c653b97b001014980ac33de01ca1:-1339172601,145086532d7b00104667d6d60057e978:1040290535</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cleanup">fa71aeab5bfb0010720b1ec76981c770</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:10</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_bp_stage_op">sn_cmp_bp_stage_op</sys_db_object>
+        <sys_id>818a8ce9061e4f49b2e681954ae0fb69</sys_id>
+        <sys_metadata>d45086535b7b0010720b1ec76981c777</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cleanup</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_bp_stage_op_d45086535b7b0010720b1ec76981c777</sys_update_name>
+        <sys_update_version display_value="sn_cmp_bp_stage_op_d45086535b7b0010720b1ec76981c777">0d50c6535b7b0010720b1ec76981c7a1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

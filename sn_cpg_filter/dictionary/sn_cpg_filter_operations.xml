@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CPG Resource Operations Filter" max_length="40" name="sn_cpg_filter_operations" sizeclass="5" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element dependent="ci_type" dependent_on_field="ci_type" label="CI Filter" max_length="4000" name="ci_filter" type="conditions" use_dependent_field="true"/>
+        <element attributes="allow_public=true,​base_start=true,​base_table=cmdb_ci" display="true" label="CI types" mandatory="true" max_length="80" name="ci_type" type="table_name"/>
+        <element label="Datacenter types" max_length="32" name="datacenter_types" reference="sys_db_object" reference_qual="super_class=3ea20c201d530010f3aeff75e7e83612^EQ" reference_qual_condition="super_class=3ea20c201d530010f3aeff75e7e83612^EQ" type="glide_list"/>
+        <element default="/** Update the following script with a custom script to determine if a specified operation should be displayed for a given CI&#13;&#10;* The following variables are available:&#13;&#10;*  ciId - sys_id of the CI to be tested&#13;&#10;*  ciTable  - CMDB table the CI resides on&#13;&#10;*   ldcId - the sys_id of the Logical Datacenter the CI is deployed on&#13;&#10;*   rbOperationName - name of the operation being validated&#13;&#10;*   rbOperationId - the sys_id of the operation being validated&#13;&#10;*   Return true if the operation should be displayed based on the results of the script&#13;&#10;*   Return false if the operation should not be displayed based on the results of the script&#13;&#10;**/   &#13;&#10;filterScript(ciId, ciTable, ldcId, rbOperationName, rbOperationId);&#13;&#10;&#13;&#10;function filterScript(ciId,ciTable,ldcId,rbOperationName,rbOperationId) {&#13;&#10;&#9;// Add custom script filter here&#13;&#10;&#13;&#10;&#13;&#10;&#9;// Return true if the CI passes the fitler or false if it does not&#13;&#10;&#9;return true;&#13;&#10;}" label="Filter script" mandatory="true" max_length="8000" name="filter_script" type="script"/>
+        <element choice="1" label="Filter type" max_length="40" name="filter_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Datacenter types" sequence="0" value="datacenter_types"/>
+                <element inactive="true" inactive_on_update="true" label="Logical datacenters" sequence="1" value="logical_datacenters"/>
+                <element inactive_on_update="false" label="CI attributes" sequence="2" value="ci_attributes"/>
+                <element inactive_on_update="false" label="Custom script" sequence="3" value="custom_script"/>
+            </choice>
+        </element>
+        <element label="Resource operation" mandatory="true" max_length="32" name="resource_operation" reference="sn_cmp_rb_op_impl" reference_qual="javascript:&quot;operation.access_type=2^resource.refcitypeISNOTEMPTY^resource.refcitype=&quot; + current.ci_type + &quot;^EQ&quot;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Short description" max_length="100" name="short_description" type="string"/>
+        <index name="index">
+            <element name="resource_operation"/>
+        </index>
+        <index name="index2">
+            <element name="datacenter_types"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_resourcescript">
+    <sn_cmp_rb_resourcescript action="DELETE">
+        <name>ARMTemplate ARM Template</name>
+        <resource display_value="ARMTemplate">aa40c2535b7b0010720b1ec76981c71e</resource>
+        <script>{&#13;
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",&#13;
+  "contentVersion": "1.0.0.0",&#13;
+  "parameters": {&#13;
+    "adminUsername": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "itomuser",&#13;
+      "metadata": {&#13;
+        "description": "User name for the Virtual Machine."&#13;
+      }&#13;
+    },&#13;
+    "adminPassword": {&#13;
+      "type": "securestring",&#13;
+      "defaultValue": "P@ssword1234",&#13;
+      "metadata": {&#13;
+        "description": "Password for the Virtual Machine."&#13;
+      }&#13;
+    },&#13;
+    "ubuntuOSVersion": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "16.04.0-LTS",&#13;
+      "allowedValues": [&#13;
+        "12.04.5-LTS",&#13;
+        "14.04.5-LTS",&#13;
+        "15.10",&#13;
+        "16.04.0-LTS"&#13;
+      ],&#13;
+      "metadata": {&#13;
+        "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."&#13;
+      }&#13;
+    }&#13;
+  },&#13;
+  "variables": {&#13;
+    "dnsPrefix": "[concat('smoke',uniquestring(resourceGroup().id))]",&#13;
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",&#13;
+    "imagePublisher": "Canonical",&#13;
+    "imageOffer": "UbuntuServer",&#13;
+    "nicName": "myVMNic",&#13;
+    "addressPrefix": "10.0.0.0/16",&#13;
+    "subnetName": "Subnet",&#13;
+    "subnetPrefix": "10.0.0.0/24",&#13;
+    "storageAccountType": "Standard_LRS",&#13;
+    "publicIPAddressName": "myPublicIP",&#13;
+    "publicIPAddressType": "Dynamic",&#13;
+    "vmName": "MyUbuntuVM",&#13;
+    "vmSize": "Standard_A1",&#13;
+    "virtualNetworkName": "MyVNET",&#13;
+    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",&#13;
+    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]"&#13;
+  },&#13;
+  "resources": [&#13;
+    {&#13;
+      "type": "Microsoft.Storage/storageAccounts",&#13;
+      "name": "[variables('storageAccountName')]",&#13;
+      "apiVersion": "2017-06-01",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "sku": {&#13;
+        "name": "[variables('storageAccountType')]"&#13;
+      },&#13;
+      "kind": "Storage",&#13;
+      "properties": {}&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2017-04-01",&#13;
+      "type": "Microsoft.Network/publicIPAddresses",&#13;
+      "name": "[variables('publicIPAddressName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "publicIPAllocationMethod": "[variables('publicIPAddressType')]",&#13;
+        "dnsSettings": {&#13;
+          "domainNameLabel": "[variables('dnsPrefix')]"&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2017-04-01",&#13;
+      "type": "Microsoft.Network/virtualNetworks",&#13;
+      "name": "[variables('virtualNetworkName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "addressSpace": {&#13;
+          "addressPrefixes": [&#13;
+            "[variables('addressPrefix')]"&#13;
+          ]&#13;
+        },&#13;
+        "subnets": [&#13;
+          {&#13;
+            "name": "[variables('subnetName')]",&#13;
+            "properties": {&#13;
+              "addressPrefix": "[variables('subnetPrefix')]"&#13;
+            }&#13;
+          }&#13;
+        ]&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2017-04-01",&#13;
+      "type": "Microsoft.Network/networkInterfaces",&#13;
+      "name": "[variables('nicName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[resourceId('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]",&#13;
+        "[resourceId('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "ipConfigurations": [&#13;
+          {&#13;
+            "name": "ipconfig1",&#13;
+            "properties": {&#13;
+              "privateIPAllocationMethod": "Dynamic",&#13;
+              "publicIPAddress": {&#13;
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"&#13;
+              },&#13;
+              "subnet": {&#13;
+                "id": "[variables('subnetRef')]"&#13;
+              }&#13;
+            }&#13;
+          }&#13;
+        ]&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2017-03-30",&#13;
+      "type": "Microsoft.Compute/virtualMachines",&#13;
+      "name": "[variables('vmName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",&#13;
+        "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "hardwareProfile": {&#13;
+          "vmSize": "[variables('vmSize')]"&#13;
+        },&#13;
+        "osProfile": {&#13;
+          "computerName": "[variables('vmName')]",&#13;
+          "adminUsername": "[parameters('adminUsername')]",&#13;
+          "adminPassword": "[parameters('adminPassword')]"&#13;
+        },&#13;
+        "storageProfile": {&#13;
+          "imageReference": {&#13;
+            "publisher": "[variables('imagePublisher')]",&#13;
+            "offer": "[variables('imageOffer')]",&#13;
+            "sku": "[parameters('ubuntuOSVersion')]",&#13;
+            "version": "latest"&#13;
+          },&#13;
+          "osDisk": {&#13;
+            "createOption": "FromImage"&#13;
+          },&#13;
+          "dataDisks": [&#13;
+            {&#13;
+              "diskSizeGB": "1023",&#13;
+              "lun": 0,&#13;
+              "createOption": "Empty"&#13;
+            }&#13;
+          ]&#13;
+        },&#13;
+        "networkProfile": {&#13;
+          "networkInterfaces": [&#13;
+            {&#13;
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"&#13;
+            }&#13;
+          ]&#13;
+        },&#13;
+        "diagnosticsProfile": {&#13;
+          "bootDiagnostics": {&#13;
+            "enabled": "true",&#13;
+            "storageUri": "[concat(reference(concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName')), '2016-01-01').primaryEndpoints.blob)]"&#13;
+          }&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  ],&#13;
+  "outputs": {&#13;
+    "hostname": {&#13;
+      "type": "string",&#13;
+      "value": "[reference(variables('publicIPAddressName')).dnsSettings.fqdn]"&#13;
+    },&#13;
+    "sshCommand": {&#13;
+      "type": "string",&#13;
+      "value": "[concat('ssh ', parameters('adminUsername'), '@', reference(variables('publicIPAddressName')).dnsSettings.fqdn)]"&#13;
+    }&#13;
+  }&#13;
+}</script>
+        <script_js/>
+        <sys_class_name>sn_cmp_rb_resourcescript</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:41</sys_created_on>
+        <sys_id>2640c2535b7b0010720b1ec76981c736</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ARMTemplate ARM Template</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_rb_resourcescript_2640c2535b7b0010720b1ec76981c736</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:41</sys_updated_on>
+        <type>18</type>
+    </sn_cmp_rb_resourcescript>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_rb_resourcescript_2640c2535b7b0010720b1ec76981c736</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_resourcescript"><sn_cmp_rb_resourcescript action="INSERT_OR_UPDATE"><name>ARMTemplate ARM Template</name><resource display_value="ARMTemplate">aa40c2535b7b0010720b1ec76981c71e</resource><script>{&#13;
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",&#13;
+  "contentVersion": "1.0.0.0",&#13;
+  "parameters": {&#13;
+    "adminUsername": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "itomuser",&#13;
+      "metadata": {&#13;
+        "description": "User name for the Virtual Machine."&#13;
+      }&#13;
+    },&#13;
+    "adminPassword": {&#13;
+      "type": "securestring",&#13;
+      "defaultValue": "P@ssword1234",&#13;
+      "metadata": {&#13;
+        "description": "Password for the Virtual Machine."&#13;
+      }&#13;
+    },&#13;
+    "ubuntuOSVersion": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "16.04.0-LTS",&#13;
+      "allowedValues": [&#13;
+        "12.04.5-LTS",&#13;
+        "14.04.5-LTS",&#13;
+        "15.10",&#13;
+        "16.04.0-LTS"&#13;
+      ],&#13;
+      "metadata": {&#13;
+        "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."&#13;
+      }&#13;
+    }&#13;
+  },&#13;
+  "variables": {&#13;
+    "dnsPrefix": "[concat('smoke',uniquestring(resourceGroup().id))]",&#13;
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",&#13;
+    "imagePublisher": "Canonical",&#13;
+    "imageOffer": "UbuntuServer",&#13;
+    "nicName": "myVMNic",&#13;
+    "addressPrefix": "10.0.0.0/16",&#13;
+    "subnetName": "Subnet",&#13;
+    "subnetPrefix": "10.0.0.0/24",&#13;
+    "storageAccountType": "Standard_LRS",&#13;
+    "publicIPAddressName": "myPublicIP",&#13;
+    "publicIPAddressType": "Dynamic",&#13;
+    "vmName": "MyUbuntuVM",&#13;
+    "vmSize": "Standard_A1",&#13;
+    "virtualNetworkName": "MyVNET",&#13;
+    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",&#13;
+    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]"&#13;
+  },&#13;
+  "resources": [&#13;
+    {&#13;
+      "type": "Microsoft.Storage/storageAccounts",&#13;
+      "name": "[variables('storageAccountName')]",&#13;
+      "apiVersion": "2017-06-01",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "sku": {&#13;
+        "name": "[variables('storageAccountType')]"&#13;
+      },&#13;
+      "kind": "Storage",&#13;
+      "properties": {}&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2017-04-01",&#13;
+      "type": "Microsoft.Network/publicIPAddresses",&#13;
+      "name": "[variables('publicIPAddressName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "publicIPAllocationMethod": "[variables('publicIPAddressType')]",&#13;
+        "dnsSettings": {&#13;
+          "domainNameLabel": "[variables('dnsPrefix')]"&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2017-04-01",&#13;
+      "type": "Microsoft.Network/virtualNetworks",&#13;
+      "name": "[variables('virtualNetworkName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "addressSpace": {&#13;
+          "addressPrefixes": [&#13;
+            "[variables('addressPrefix')]"&#13;
+          ]&#13;
+        },&#13;
+        "subnets": [&#13;
+          {&#13;
+            "name": "[variables('subnetName')]",&#13;
+            "properties": {&#13;
+              "addressPrefix": "[variables('subnetPrefix')]"&#13;
+            }&#13;
+          }&#13;
+        ]&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2017-04-01",&#13;
+      "type": "Microsoft.Network/networkInterfaces",&#13;
+      "name": "[variables('nicName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[resourceId('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]",&#13;
+        "[resourceId('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "ipConfigurations": [&#13;
+          {&#13;
+            "name": "ipconfig1",&#13;
+            "properties": {&#13;
+              "privateIPAllocationMethod": "Dynamic",&#13;
+              "publicIPAddress": {&#13;
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"&#13;
+              },&#13;
+              "subnet": {&#13;
+                "id": "[variables('subnetRef')]"&#13;
+              }&#13;
+            }&#13;
+          }&#13;
+        ]&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2017-03-30",&#13;
+      "type": "Microsoft.Compute/virtualMachines",&#13;
+      "name": "[variables('vmName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",&#13;
+        "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "hardwareProfile": {&#13;
+          "vmSize": "[variables('vmSize')]"&#13;
+        },&#13;
+        "osProfile": {&#13;
+          "computerName": "[variables('vmName')]",&#13;
+          "adminUsername": "[parameters('adminUsername')]",&#13;
+          "adminPassword": "[parameters('adminPassword')]"&#13;
+        },&#13;
+        "storageProfile": {&#13;
+          "imageReference": {&#13;
+            "publisher": "[variables('imagePublisher')]",&#13;
+            "offer": "[variables('imageOffer')]",&#13;
+            "sku": "[parameters('ubuntuOSVersion')]",&#13;
+            "version": "latest"&#13;
+          },&#13;
+          "osDisk": {&#13;
+            "createOption": "FromImage"&#13;
+          },&#13;
+          "dataDisks": [&#13;
+            {&#13;
+              "diskSizeGB": "1023",&#13;
+              "lun": 0,&#13;
+              "createOption": "Empty"&#13;
+            }&#13;
+          ]&#13;
+        },&#13;
+        "networkProfile": {&#13;
+          "networkInterfaces": [&#13;
+            {&#13;
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"&#13;
+            }&#13;
+          ]&#13;
+        },&#13;
+        "diagnosticsProfile": {&#13;
+          "bootDiagnostics": {&#13;
+            "enabled": "true",&#13;
+            "storageUri": "[concat(reference(concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName')), '2016-01-01').primaryEndpoints.blob)]"&#13;
+          }&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  ],&#13;
+  "outputs": {&#13;
+    "hostname": {&#13;
+      "type": "string",&#13;
+      "value": "[reference(variables('publicIPAddressName')).dnsSettings.fqdn]"&#13;
+    },&#13;
+    "sshCommand": {&#13;
+      "type": "string",&#13;
+      "value": "[concat('ssh ', parameters('adminUsername'), '@', reference(variables('publicIPAddressName')).dnsSettings.fqdn)]"&#13;
+    }&#13;
+  }&#13;
+}</script><script_js/><sys_class_name>sn_cmp_rb_resourcescript</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:41</sys_created_on><sys_id>2640c2535b7b0010720b1ec76981c736</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ARMTemplate ARM Template</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_rb_resourcescript_2640c2535b7b0010720b1ec76981c736</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:41</sys_updated_on><type>18</type></sn_cmp_rb_resourcescript></record_update>]]></payload>
+        <payload_hash>883369505</payload_hash>
+        <record_name>ARMTemplate ARM Template</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:41</sys_created_on>
+        <sys_id>6640c2535b7b0010720b1ec76981c738</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e0d1410000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:41</sys_updated_on>
+        <type>Resource Script</type>
+        <update_guid>ae40c253017b0010f564424af59bdf37</update_guid>
+        <update_guid_history>ae40c253017b0010f564424af59bdf37:883369505</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ARMTemplate ARM Template">808162eb5bfb0010720b1ec76981c7fb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:16</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_rb_resourcescript">sn_cmp_rb_resourcescript</sys_db_object>
+        <sys_id>5583cf16be92402bad6ff409a8979e71</sys_id>
+        <sys_metadata>2640c2535b7b0010720b1ec76981c736</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ARMTemplate ARM Template</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_rb_resourcescript_2640c2535b7b0010720b1ec76981c736</sys_update_name>
+        <sys_update_version display_value="sn_cmp_rb_resourcescript_2640c2535b7b0010720b1ec76981c736">6640c2535b7b0010720b1ec76981c738</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_param">
+    <sn_cmp_rb_op_impl_param action="DELETE">
+        <applicable_to/>
+        <datasource>2</datasource>
+        <datasourcevalue>ServiceNow::Pools::ScheduleTimeZonePool.All</datasourcevalue>
+        <defaultvalue>${parameter.ScheduleTimeZone}</defaultvalue>
+        <error_text/>
+        <help_text/>
+        <host/>
+        <ismandatory>true</ismandatory>
+        <name>ScheduleTimeZone</name>
+        <op_param/>
+        <operation display_value="Provision">2f4006535b7b0010720b1ec76981c7f3</operation>
+        <order>90</order>
+        <read_only>false</read_only>
+        <regex/>
+        <step/>
+        <sys_class_name>sn_cmp_rb_op_impl_param</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:46</sys_created_on>
+        <sys_id>fb4046535b7b0010720b1ec76981c747</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScheduleTimeZone</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_impl_param_fb4046535b7b0010720b1ec76981c747</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:46</sys_updated_on>
+        <ui_data_type/>
+        <value/>
+        <visibilty>true</visibilty>
+    </sn_cmp_rb_op_impl_param>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_rb_op_impl_param_fb4046535b7b0010720b1ec76981c747</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_param"><sn_cmp_rb_op_impl_param action="INSERT_OR_UPDATE"><applicable_to/><datasource>2</datasource><datasourcevalue>ServiceNow::Pools::ScheduleTimeZonePool.All</datasourcevalue><defaultvalue>${parameter.ScheduleTimeZone}</defaultvalue><error_text/><help_text/><host/><ismandatory>true</ismandatory><name>ScheduleTimeZone</name><op_param/><operation display_value="Provision">2f4006535b7b0010720b1ec76981c7f3</operation><order>90</order><read_only>false</read_only><regex/><step/><sys_class_name>sn_cmp_rb_op_impl_param</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:46</sys_created_on><sys_id>fb4046535b7b0010720b1ec76981c747</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ScheduleTimeZone</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_rb_op_impl_param_fb4046535b7b0010720b1ec76981c747</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:46</sys_updated_on><ui_data_type/><value/><visibilty>true</visibilty></sn_cmp_rb_op_impl_param></record_update>]]></payload>
+        <payload_hash>-1498269290</payload_hash>
+        <record_name>ScheduleTimeZone</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:46</sys_created_on>
+        <sys_id>3f4046535b7b0010720b1ec76981c749</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e0e4c00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:46</sys_updated_on>
+        <type>Operation Parameter</type>
+        <update_guid>77404653d67b0010483d57c6a6203849</update_guid>
+        <update_guid_history>77404653d67b0010483d57c6a6203849:-1498269290</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ScheduleTimeZone">db71eeab5bfb0010720b1ec76981c7b8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:12</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_rb_op_impl_param">sn_cmp_rb_op_impl_param</sys_db_object>
+        <sys_id>1d06e3191be4408fa424bd0ba6421d89</sys_id>
+        <sys_metadata>fb4046535b7b0010720b1ec76981c747</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScheduleTimeZone</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_rb_op_impl_param_fb4046535b7b0010720b1ec76981c747</sys_update_name>
+        <sys_update_version display_value="sn_cmp_rb_op_impl_param_fb4046535b7b0010720b1ec76981c747">3f4046535b7b0010720b1ec76981c749</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

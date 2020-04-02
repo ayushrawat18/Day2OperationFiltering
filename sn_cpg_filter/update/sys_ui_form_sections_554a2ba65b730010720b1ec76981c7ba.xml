@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="554a2ba65b730010720b1ec76981c7ba" sys_domain="global" table="sn_cpg_filter_operations" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-30 08:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>194a2ba65b730010720b1ec76981c7c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_cpg_filter_operations" name="sn_cpg_filter_operations" sys_domain="global" view="Default view">554a2ba65b730010720b1ec76981c7ba</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sn_cpg_filter_operations" sys_domain="global" view="Default view">89f8af665b730010720b1ec76981c77d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-30 08:22:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sn_cpg_filter_operations</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-30 08:22:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>554a2ba65b730010720b1ec76981c7ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_cpg_filter_operations</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+            <sys_update_name>sys_ui_form_sections_554a2ba65b730010720b1ec76981c7ba</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-30 08:22:16</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

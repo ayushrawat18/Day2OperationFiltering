@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_step">
+    <sn_cmp_rb_op_impl_step action="DELETE">
+        <capi_interface/>
+        <capi_method/>
+        <capi_version/>
+        <condition/>
+        <depends_on/>
+        <enabled>true</enabled>
+        <flow_type/>
+        <force_async>false</force_async>
+        <interface/>
+        <interface_operation/>
+        <name>CmpBusinessScheduleUtil.modifyLease</name>
+        <operationimpl display_value="ModifyLease">dc5086535b7b0010720b1ec76981c727</operationimpl>
+        <order>20</order>
+        <owner_type>5</owner_type>
+        <parent_step/>
+        <parentstep/>
+        <product_type/>
+        <provider/>
+        <provider_ref/>
+        <provider_type/>
+        <resource_interface/>
+        <sys_class_name>sn_cmp_rb_op_impl_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:58</sys_created_on>
+        <sys_id>be508a535b7b0010720b1ec76981c7fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CmpBusinessScheduleUtil.modifyLease</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_impl_step_be508a535b7b0010720b1ec76981c7fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:58</sys_updated_on>
+        <target_entity_flow/>
+    </sn_cmp_rb_op_impl_step>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>b12240a81d130010f3aeff75e7e83643</instance_id>
+        <instance_name>glide_db_dump</instance_name>
+        <name>sn_cmp_rb_op_impl_step_be508a535b7b0010720b1ec76981c7fe</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_step"><sn_cmp_rb_op_impl_step action="INSERT_OR_UPDATE"><capi_interface/><capi_method/><capi_version/><condition/><depends_on/><enabled>true</enabled><flow_type/><force_async>false</force_async><interface/><interface_operation/><name>CmpBusinessScheduleUtil.modifyLease</name><operationimpl display_value="ModifyLease">dc5086535b7b0010720b1ec76981c727</operationimpl><order>20</order><owner_type>5</owner_type><parent_step/><parentstep/><product_type/><provider/><provider_ref/><provider_type/><resource_interface/><sys_class_name>sn_cmp_rb_op_impl_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-04-01 08:34:58</sys_created_on><sys_id>be508a535b7b0010720b1ec76981c7fe</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CmpBusinessScheduleUtil.modifyLease</sys_name><sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package><sys_policy/><sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope><sys_update_name>sn_cmp_rb_op_impl_step_be508a535b7b0010720b1ec76981c7fe</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-04-01 08:34:58</sys_updated_on><target_entity_flow/></sn_cmp_rb_op_impl_step></record_update>]]></payload>
+        <payload_hash>-782530026</payload_hash>
+        <record_name>CmpBusinessScheduleUtil.modifyLease</record_name>
+        <reverted_from/>
+        <source>4b7fa6a25b330010720b1ec76981c7e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 08:34:58</sys_created_on>
+        <sys_id>3650ca535b7b0010720b1ec76981c700</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17134e116ef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 08:34:58</sys_updated_on>
+        <type>Operation Step</type>
+        <update_guid>7e508a53457b0010e6f800f21fdcf5ff</update_guid>
+        <update_guid_history>7e508a53457b0010e6f800f21fdcf5ff:-782530026</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CmpBusinessScheduleUtil.modifyLease">c771eeab5bfb0010720b1ec76981c748</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 05:38:11</sys_created_on>
+        <sys_db_object display_value="" name="sn_cmp_rb_op_impl_step">sn_cmp_rb_op_impl_step</sys_db_object>
+        <sys_id>5ceeafe6b25a4ee0a25eadabf70c6440</sys_id>
+        <sys_metadata>be508a535b7b0010720b1ec76981c7fe</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CmpBusinessScheduleUtil.modifyLease</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sn_cmp_rb_op_impl_step_be508a535b7b0010720b1ec76981c7fe</sys_update_name>
+        <sys_update_version display_value="sn_cmp_rb_op_impl_step_be508a535b7b0010720b1ec76981c7fe">3650ca535b7b0010720b1ec76981c700</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 05:38:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

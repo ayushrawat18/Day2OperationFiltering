@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_step">
+    <sn_cmp_rb_op_impl_step action="INSERT_OR_UPDATE">
+        <capi_interface display_value="Node Access Interface">7d22dfe30bb03200f353c9bf15673ae3</capi_interface>
+        <capi_method display_value="BlockUntilReady">ac2188c90b013200f353c9bf15673a84</capi_method>
+        <capi_version/>
+        <condition/>
+        <depends_on/>
+        <enabled>true</enabled>
+        <flow_type/>
+        <force_async>false</force_async>
+        <interface/>
+        <interface_operation/>
+        <name>Node Access Interface.BlockUntilReady</name>
+        <operationimpl display_value="Block Until Ready">f7ba4a9b5b7b0010720b1ec76981c77a</operationimpl>
+        <order/>
+        <owner_type>1</owner_type>
+        <parent_step/>
+        <parentstep/>
+        <product_type/>
+        <provider>node-access</provider>
+        <provider_ref/>
+        <provider_type/>
+        <resource_interface/>
+        <sys_class_name>sn_cmp_rb_op_impl_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 09:20:22</sys_created_on>
+        <sys_id>7fba4a9b5b7b0010720b1ec76981c7ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Node Access Interface.BlockUntilReady</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_impl_step_7fba4a9b5b7b0010720b1ec76981c7ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-01 09:20:22</sys_updated_on>
+        <target_entity_flow/>
+    </sn_cmp_rb_op_impl_step>
+</record_update>

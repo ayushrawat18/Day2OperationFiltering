@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ValidateFilterType Active</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	g_form.hideAllFieldMsgs();
+	
+	if (isLoading || newValue === '' || g_form.getValue('active')=="false" || g_form.getValue('filter_type') == 'custom_script') {
+		return;
+	}
+	
+	checkCounts();
+}
+
+function checkCounts(){
+	var ga = new GlideAjax('sn_cpg_filter.CPGOperationFilterCounts');
+	
+	ga.addParam('sysparm_name','getFilterCounts');
+	ga.addParam('tableName',g_form.getTableName());
+	ga.addParam('ciType',g_form.getValue('ci_type'));
+	ga.addParam('resourceOperation',g_form.getValue('resource_operation'));
+	ga.addParam('currentId',g_form.getUniqueValue());
+	
+	ga.getXML(filterAjaxResponse);
+}
+
+function filterAjaxResponse(response){
+	var filterType = g_form.getValue('filter_type');
+	
+	var filterTypes = response.responseXML.getElementsByTagName("filterType");
+	for(var i = 0; i < filterTypes.length; i ++) {
+		if (filterType == filterTypes[i].getAttribute("name") && filterTypes[i].getAttribute("count") > 0){
+			g_form.showFieldMsg('filter_type',filterTypes[i].getAttribute("count") + ' active filter(s) of this filter type for this CI type and resource operation already exist.  Consider combining these filters into a single filter.','info');
+		}
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-31 02:29:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fdd26bbe5bf30010720b1ec76981c73f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ValidateFilterType Active</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sys_script_client_fdd26bbe5bf30010720b1ec76981c73f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-31 02:29:23</sys_updated_on>
+        <table>sn_cpg_filter_operations</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
