@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_param">
     <sn_cmp_rb_op_param action="INSERT_OR_UPDATE">
-        <interface display_value="PublishExtension Interface">3488bddb5b3b0010720b1ec76981c70d</interface>
+        <interface display_value="">3488bddb5b3b0010720b1ec76981c70d</interface>
         <name>resourceId</name>
         <operation display_value="DeployJenkins">3398865b5b7b0010720b1ec76981c72c</operation>
         <order>30</order>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl">
     <sn_cmp_rb_op_impl action="INSERT_OR_UPDATE">
-        <interface display_value="PublishExtension Interface">3488bddb5b3b0010720b1ec76981c70d</interface>
+        <interface display_value="">3488bddb5b3b0010720b1ec76981c70d</interface>
         <operation display_value="DeployJenkins">3398865b5b7b0010720b1ec76981c72c</operation>
         <operation_output_attributes/>
         <resource display_value="Virtual Server">6a4a735e0be622009e620bcb15673a04</resource>

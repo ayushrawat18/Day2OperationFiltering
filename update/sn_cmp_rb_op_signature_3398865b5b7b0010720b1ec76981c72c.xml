@@ -2,7 +2,7 @@
     <sn_cmp_rb_op_signature action="INSERT_OR_UPDATE">
         <access_type>2</access_type>
         <applicable_to/>
-        <interface display_value="PublishExtension Interface">3488bddb5b3b0010720b1ec76981c70d</interface>
+        <interface display_value="">3488bddb5b3b0010720b1ec76981c70d</interface>
         <name>DeployJenkins</name>
         <operation_type display_value="ATTACH">bdb70cea0b7032009e620bcb15673a56</operation_type>
         <sys_class_name>sn_cmp_rb_op_signature</sys_class_name>

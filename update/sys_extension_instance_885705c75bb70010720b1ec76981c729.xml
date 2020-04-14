@@ -3,7 +3,7 @@
         <active>true</active>
         <order>100</order>
         <point>sn_cmp.FilterCMPResourceOperation</point>
-        <script_include display_value="FilterCMPResourceOperation">c057c1c75bb70010720b1ec76981c790</script_include>
+        <script_include display_value="">c057c1c75bb70010720b1ec76981c790</script_include>
         <sys_class_name>sys_extension_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-03-31 09:47:15</sys_created_on>
