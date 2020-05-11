@@ -58,6 +58,7 @@
         <reference_qual/>
         <reference_qual_condition/>
         <regex/>
+        <rich_text/>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
         <show_help>false</show_help>

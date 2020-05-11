@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rsrc_opr_cat_item">
     <sn_cmp_rsrc_opr_cat_item action="INSERT_OR_UPDATE">
+        <access_type/>
         <active>true</active>
+        <additional_review>false</additional_review>
         <availability>on_desktop</availability>
         <billable>false</billable>
         <category/>

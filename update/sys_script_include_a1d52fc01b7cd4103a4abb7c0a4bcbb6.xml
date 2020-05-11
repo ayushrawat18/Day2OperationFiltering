@@ -9,7 +9,7 @@
         <name>FilterUtils</name>
         <script><![CDATA[var FilterUtils = Class.create();
 FilterUtils.prototype = {
-   initialize: function() {
+    initialize: function() {
 		this.filterTable = 'sn_cpg_filter_operations';
 		
 		this.ldcTypeFilterType = 'datacenter_types';
@@ -26,10 +26,6 @@ FilterUtils.prototype = {
     },
 	
 	filterResourceOperations: function(rbOperations,ciId,ciTable){
-		gs.info(">>>>>>> rbOperations,ciId,ciTable "+rbOperations);
-		gs.info(">>>>>>> rbOperations,ciId,ciTable "+ciId);
-		gs.info(">>>>>>> rbOperations,ciId,ciTable "+ciTable);
-		
 		if (ciTable == 'sn_cmp_stack') return rbOperations;
 		
 		var ci_GR = new GlideRecord(ciTable);
@@ -137,15 +133,15 @@ FilterUtils.prototype = {
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-31 03:33:16</sys_created_on>
-        <sys_id>c691bfb65b370010720b1ec76981c700</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2020-05-11 06:41:23</sys_created_on>
+        <sys_id>a1d52fc01b7cd4103a4abb7c0a4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>FilterUtils</sys_name>
         <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
-        <sys_update_name>sys_script_include_c691bfb65b370010720b1ec76981c700</sys_update_name>
+        <sys_update_name>sys_script_include_a1d52fc01b7cd4103a4abb7c0a4bcbb6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-31 05:54:09</sys_updated_on>
+        <sys_updated_on>2020-05-11 06:41:23</sys_updated_on>
     </sys_script_include>
 </record_update>

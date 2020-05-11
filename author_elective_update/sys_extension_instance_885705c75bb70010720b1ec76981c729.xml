@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_extension_instance">
+    <sys_extension_instance action="DELETE">
+        <active>true</active>
+        <order>100</order>
+        <point>sn_cmp.FilterCMPResourceOperation</point>
+        <script_include display_value="FilterCMPResourceOperation">c057c1c75bb70010720b1ec76981c790</script_include>
+        <sys_class_name>sys_extension_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-31 09:47:15</sys_created_on>
+        <sys_id>885705c75bb70010720b1ec76981c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_cmp.FilterCMPResourceOperation</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sys_extension_instance_885705c75bb70010720b1ec76981c729</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-31 09:47:15</sys_updated_on>
+    </sys_extension_instance>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</application>
+        <file_path/>
+        <instance_id>e0018708db2cdc90d5c911f84896192c</instance_id>
+        <instance_name>itomcdcop9</instance_name>
+        <name>sys_extension_instance_885705c75bb70010720b1ec76981c729</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_extension_instance">
+    <sys_extension_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <point>sn_cmp.FilterCMPResourceOperation</point>
+        <script_include display_value="FilterCMPResourceOperation">c057c1c75bb70010720b1ec76981c790</script_include>
+        <sys_class_name>sys_extension_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-31 09:47:15</sys_created_on>
+        <sys_id>885705c75bb70010720b1ec76981c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_cmp.FilterCMPResourceOperation</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_update_name>sys_extension_instance_885705c75bb70010720b1ec76981c729</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-31 09:47:15</sys_updated_on>
+    </sys_extension_instance>
+</record_update>]]></payload>
+        <payload_hash>197067849</payload_hash>
+        <record_name>sn_cmp.FilterCMPResourceOperation</record_name>
+        <reverted_from/>
+        <source>df4e5b8c1b3cd4103a4abb7c0a4bcb7d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-11 06:08:11</sys_created_on>
+        <sys_id>7e5e1f8c1b3cd4103a4abb7c0a4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172025913900000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:08:11</sys_updated_on>
+        <type>Extension Instance</type>
+        <update_guid>3e5e1f8c093cd41021bb72cef1275200</update_guid>
+        <update_guid_history>3e5e1f8c093cd41021bb72cef1275200:197067849</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-11 06:13:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_extension_instance">sys_extension_instance</sys_db_object>
+        <sys_id>098a839fe8754d9c8ed28796e934d210</sys_id>
+        <sys_metadata>885705c75bb70010720b1ec76981c729</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_cmp.FilterCMPResourceOperation</sys_name>
+        <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
+        <sys_scope_delete display_value="">50d3c45eab924026a72223cc12040e84</sys_scope_delete>
+        <sys_update_name>sys_extension_instance_885705c75bb70010720b1ec76981c729</sys_update_name>
+        <sys_update_version display_value="sys_extension_instance_885705c75bb70010720b1ec76981c729">7e5e1f8c1b3cd4103a4abb7c0a4bcb00</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:13:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
