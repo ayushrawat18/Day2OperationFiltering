@@ -9,6 +9,8 @@
         <name>FilterUtils</name>
         <script><![CDATA[var FilterUtils = Class.create();
 FilterUtils.prototype = {
+	displayName : '',
+	
     initialize: function() {
 		this.filterTable = 'sn_cpg_filter_operations';
 		
@@ -41,9 +43,18 @@ FilterUtils.prototype = {
 			if (!this._checkScript(ciLDC_GR,ci_GR,rbOperations[i])) continue;
 			
 			filteredOperations.push(rbOperations[i]);
+			
+			if(!gs.nil(this.displayName))
+				filteredOperations[i].operationDisplayName = this.displayName + '';
+			
+			this.displayName = '';
 		}
 		
 		return filteredOperations;
+	},
+	
+	_setDisplayValue : function(opDisplayName) {
+		this.displayName = opDisplayName;
 	},
 	
 	_getCiLDC_GR: function(ciId,ciTable){
@@ -75,8 +86,8 @@ FilterUtils.prototype = {
 	
 	_checkLDCType: function(ciLDC_GR,ci_GR,rbOperation){
 		var filter_GR = this._getFilterGR(this.ldcTypeFilterType,ci_GR,rbOperation.operationId);
-				
 		filterTest: while(filter_GR.next()){
+			this._setDisplayValue(filter_GR.display_name);
 			var splitLDCTypes = filter_GR.datacenter_types.getDisplayValue().split(', ');
 			
 			for(var i=0;i<splitLDCTypes.length;i++){
@@ -91,6 +102,7 @@ FilterUtils.prototype = {
 		var filter_GR = this._getFilterGR(this.ldcFilterType,ci_GR,rbOperation.operationId);
 					
 		filterTest: while(filter_GR.next()){
+			this._setDisplayValue(filter_GR.display_name);
 			var splitLDCs = filter_GR.logical_datacenters.toString().split(',');
 			
 			for(var i=0;i<splitLDCs.length;i++){
@@ -105,6 +117,7 @@ FilterUtils.prototype = {
 		var filter_GR = this._getFilterGR(this.ciAttributeFilterType,ci_GR,rbOperation.operationId);
 					
 		filterTest: while(filter_GR.next()){
+			this._setDisplayValue(filter_GR.display_name);
 			if (GlideFilter.checkRecord(ci_GR,filter_GR.ci_filter)) continue filterTest;
 			return false;
 		}
@@ -115,6 +128,7 @@ FilterUtils.prototype = {
 		var filter_GR = this._getFilterGR(this.scriptFilterType,ci_GR,rbOperation.operationId);
 					
 		filterTest: while(filter_GR.next()){
+			this._setDisplayValue(filter_GR.display_name);
 			var scriptVars = {};
 			scriptVars.ciId = ci_GR.sys_id;
 			scriptVars.ciTable = ci_GR.sys_class_name;
@@ -135,13 +149,13 @@ FilterUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-11 06:41:23</sys_created_on>
         <sys_id>a1d52fc01b7cd4103a4abb7c0a4bcbb6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>FilterUtils</sys_name>
         <sys_package display_value="CPG Resource Operations Filter" source="sn_cpg_filter">0f7fa6a25b330010720b1ec76981c7de</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="CPG Resource Operations Filter">0f7fa6a25b330010720b1ec76981c7de</sys_scope>
         <sys_update_name>sys_script_include_a1d52fc01b7cd4103a4abb7c0a4bcbb6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-11 06:41:23</sys_updated_on>
+        <sys_updated_on>2020-05-20 08:56:17</sys_updated_on>
     </sys_script_include>
 </record_update>
